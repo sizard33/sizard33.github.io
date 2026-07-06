@@ -6,9 +6,9 @@
     <title>Seezar Yaseen | Humanitarian Operations & Community Liaison Consultant</title>
     <style>
         :root {
-            --primary: #1e293b; /* Dark Slate */
-            --accent: #2563eb; /* Professional Blue */
-            --success: #16a34a; /* Deployment Green */
+            --primary: #1e293b;
+            --accent: #2563eb;
+            --success: #16a34a;
             --text: #334155;
             --light: #f8fafc;
         }
@@ -35,6 +35,336 @@
 
         header h1 {
             font-size: 2.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        .contact-strip {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-strip a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        .contact-strip a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .badge-deployment {
+            display: inline-block;
+            background: rgba(22, 163, 74, 0.15);
+            color: #4ade80;
+            border: 1px solid var(--success);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .service-card {
+            background: var(--light);
+            padding: 1.8rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .service-card h3 {
+            margin-bottom: 0.7rem;
+            color: var(--primary);
+            font-size: 1.15rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 2px solid #e2e8f0;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .company-date {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        .location-tag {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+        }
+        
+        .location-tag.remote {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .location-tag.onsite {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        .lang-badge {
+            display: inline-block;
+            background: #e2e8f0;
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            font-weight: 500;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .contact-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .contact-btn.secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .contact-btn.secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        footer {
+            background: var(--light);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SEEZAR YASEEN</h1>
+        <p>Humanitarian Operations Leader & Mine Action Specialist</p>
+        <div class="contact-strip">
+            <span>📍 Manchester / Remote</span>
+            <a href="tel:07950705252">📞 07950 705252</a>
+            <a href="mailto:sizar.dusky33@gmail.com">✉️ sizar.dusky33@gmail.com</a>
+        </div>
+        <div class="badge-deployment">🟢 Available for short-notice international deployment & remote contracts</div>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a senior humanitarian operations leader with over ten years of experience managing complex field programmes, community liaison frameworks and safety workflows in post-conflict zones. I specialise in mine action—specifically running and training teams on Explosive Ordnance Risk Education (EORE) and Non-Technical Survey (NTS) methodologies.</p>
+            <br>
+            <p>My career is built on a mix of intensive, on-the-ground deployments in Ukraine and Iraq alongside agile remote management positions coordinating teams in Palestine. I also have deep experience working within the UK third sector, which helps me bridge the gap between complex field realities, civic authorities and corporate partners.</p>
+            <br>
+            <p>I speak Kurdish and Arabic natively and work professionally in English. Whether you need an experienced leader to train national staff on NTS protocols or a remote coordinator to design adaptive EORE campaigns, I bring the practical grit and technical knowledge to deliver safely.</p>
+        </section>
+
+        <section id="services">
+            <h2>What I Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>EORE & NTS Training</h3>
+                    <p>I design practical training packages and mentor national staff, field consultants and community teams on explosive ordnance risk education and non-technical survey protocols.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Field Operations Management</h3>
+                    <p>I set up and manage daily field workflows, data collection and regional mapping teams to make sure frontline work is efficient, accurate and safe.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Community Liaison & Engagement</h3>
+                    <p>I help international organizations build real trust with local populations, design safety frameworks and make sure local context guides community protection plans.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Refugee Integration & Advisory</h3>
+                    <p>I help businesses and charities successfully hire, onboard and support staff from immigrant and refugee backgrounds to build inclusive workplaces in the UK.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Operational Interpretation</h3>
+                    <p>Using native Kurdish and Arabic dialects, I provide high-profile interpretation to clear up communication blockages and coordinate multi-agency alignments.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Safety & Risk Mitigation</h3>
+                    <p>I build straightforward reporting guidelines and adaptive rules to keep both onsite teams and remote field consultants safe in unstable zones.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional History</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <span class="job-title">Community Liaison Lead</span>
+                        <span class="location-tag remote">Remote Operation</span>
+                    </div>
+                    <span class="company-date">Mines Advisory Group (MAG) | Palestine / Remote (Mar 2026 – May 2026)</span>
+                </div>
+                <ul>
+                    <li>Remotely coordinated the rollout of Explosive Ordnance Risk Education (EORE) programs across Gaza and the West Bank.</li>
+                    <li>Trained, mentored and managed national CL coordinators and field teams operating under intense local pressure.</li>
+                    <li>Created clear reporting lines to ensure all daily remote data and field activities met strict safety protocols.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <span class="job-title">Independent Consultant & Professional Development</span>
+                        <span class="location-tag onsite">UK / Remote</span>
+                    </div>
+                    <span class="company-date">Manchester / Remote (Jul 2024 – Feb 2026)</span>
+                </div>
+                <ul>
+                    <li>Advised UK businesses on how to effectively recruit, onboard and support employees from refugee and immigrant backgrounds.</li>
+                    <li>Partnered with local charities to build community integration models and improve social inclusion.</li>
+                    <li>Completed advanced preparation to become a HEAT instructor, learning to train and safeguard personnel for high-risk deployments.</li>
+                    <li>Worked part-time with a VR exhibition to learn practical production workflows and explore how VR and AI can enhance humanitarian messaging.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <span class="job-title">Community Liaison Manager</span>
+                        <span class="location-tag onsite">In-Person Deployment</span>
+                    </div>
+                    <span class="company-date">Mines Advisory Group (MAG) | Ukraine (Sep 2023 – Jun 2024)</span>
+                </div>
+                <ul>
+                    <li>Served on the senior management team, integrating protection workflows and community liaison into regional mine action frameworks.</li>
+                    <li>Oversaw recruitment, onboarding, technical training and daily performance for regional field teams.</li>
+                    <li>Managed field data workflows to help executive leadership make evidence-based operational decisions.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <span class="job-title">Employment and Integration Advisor</span>
+                        <span class="location-tag onsite">In-Person (UK)</span>
+                    </div>
+                    <span class="company-date">Breaking Barriers | Manchester, UK (Sep 2023 – Mar 2024)</span>
+                </div>
+                <ul>
+                    <li>Managed a caseload of over 30 refugee clients, helping them find professional jobs, training and higher education.</li>
+                    <li>Conducted face-to-face and virtual assessments, turning client progress into clear reports for key funding partners.</li>
+                    <li>Brought together UK local authorities and corporate business partners to streamline employment paths.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="languages">
+            <h2>Languages</h2>
+            <span class="lang-badge">English (Professional Proficiency)</span>
+            <span class="lang-badge">Kurdish (Native)</span>
+            <span class="lang-badge">Arabic (Native)</span>
+        </section>
+
+        <section id="contact" style="text-align: center;">
+            <h2>Let's Work Together</h2>
+            <p>I am available for international deployments, remote project evaluations and specialized consulting. Reach out directly via phone or email to discuss how we can work together.</p>
+            <div class="contact-buttons">
+                <a href="mailto:sizar.dusky33@gmail.com" class="contact-btn">Email Me</a>
+                <a href="tel:07950705252" class="contact-btn secondary">Call 07950 705252</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Seezar Yaseen. All Rights Reserved. References available upon request.</p>
+    </footer>
+
+</body>
+</html>            font-size: 2.5rem;
             letter-spacing: 1px;
             margin-bottom: 0.5rem;
         }
