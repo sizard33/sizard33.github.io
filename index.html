@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,6 +35,286 @@
         header h1 {
             font-size: 2.5rem;
             letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        .contact-strip {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+
+        .contact-strip a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        .contact-strip a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .service-card {
+            background: var(--light);
+            padding: 1.8rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .service-card h3 {
+            margin-bottom: 0.7rem;
+            color: var(--primary);
+            font-size: 1.15rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 2px solid #e2e8f0;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .company-date {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        .lang-badge {
+            display: inline-block;
+            background: #e2e8f0;
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            font-weight: 500;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .contact-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .contact-btn.secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .contact-btn.secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        footer {
+            background: var(--light);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SEEZAR YASEEN</h1>
+        <p>Humanitarian Operations Leader & International Consultant</p>
+        <div class="contact-strip">
+            <span>📍 Manchester / Remote</span>
+            <a href="tel:07950705252">📞 07950 705252</a>
+            <a href="mailto:sizar.dusky33@gmail.com">✉️ sizar.dusky33@gmail.com</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>Profile Summary</h2>
+            <p>A senior humanitarian operations leader with over a decade of international experience directing critical projects across volatile and post-conflict zones. Specialising in remote team leadership, multi-stakeholder co-ordination, and localised community liaison frameworks, I help international NGOs and commercial businesses optimise field workflows, ensure strict safety compliance, and deliver vital programmes.</p>
+        </section>
+
+        <section id="services">
+            <h2>Consulting & Advisory Expertise</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Field Operations & Workflow Optimisation</h3>
+                    <p>Streamlining complex field operations, data collection models, and assessments in volatile or high-risk regions to maximise efficiency and asset deployment.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Community Liaison & Protection</h3>
+                    <p>Designing adaptive training packages, strategic local protection mechanisms, and impact assessment frameworks tailored to localised populations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Refugee Integration & Corporate Advisory</h3>
+                    <p>Advising commercial businesses and charities on how to successfully recruit, onboard, support, and socially integrate staff from immigrant and refugee backgrounds.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cross-Cultural Alignment & Interpretation</h3>
+                    <p>Providing high-profile operational interpretation and multi-agency alignment using native-level fluency across English, Kurdish, and Arabic dialects[cite: 1].</p>
+                </div>
+                <div class="service-card">
+                    <h3>Security Compliance & Risk Mitigation</h3>
+                    <p>Developing operational guidelines and strict security reporting frameworks to safeguard remote teams and field consultants working in unstable environments[cite: 1].</p>
+                </div>
+                <div class="service-card">
+                    <h3>Emerging Tech & Capacity Building</h3>
+                    <p>Leveraging specialised technical mapping, land surveying workflows, and exploring innovative tech like VR and AI to modernise humanitarian audience engagement[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Selected Professional History</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="job-title">Community Liaison Lead</span>
+                    <span class="company-date">Mines Advisory Group (MAG) | Palestine / Remote (Mar 2026 – May 2026)[cite: 1]</span>
+                </div>
+                <ul>
+                    <li>Remotely managed and co-ordinated the delivery of Explosive Ordnance Risk Education (EORE) to communities across Gaza and the West Bank[cite: 1].</li>
+                    <li>Trained, mentored and supervised national CL co-ordinators and field consultants operating within volatile areas[cite: 1].</li>
+                    <li>Developed clear reporting frameworks and operational guidelines to ensure all field activities adhered to MAG security and safety protocols[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="job-title">Independent Consultant & Professional Development</span>
+                    <span class="company-date">Manchester / Remote (Jul 2024 – Feb 2026)[cite: 1]</span>
+                </div>
+                <ul>
+                    <li>Partnered with former colleagues to advise commercial businesses on how to successfully hire, support and integrate staff from refugee and immigrant backgrounds[cite: 1].</li>
+                    <li>Supported local charity initiatives to build community integration programmes and improve social inclusion for diverse groups[cite: 1].</li>
+                    <li>Undertook advanced instructional preparation to become a HEAT instructor, learning to train and safeguard personnel for high-risk field deployments[cite: 1].</li>
+                    <li>Worked part-time with a VR exhibition to learn the practical production process and explored how virtual reality and AI can engage audiences in humanitarian work[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="job-title">Community Liaison Manager</span>
+                    <span class="company-date">Mines Advisory Group (MAG) | Ukraine (Sep 2023 – Jun 2024)[cite: 1]</span>
+                </div>
+                <ul>
+                    <li>Led community participation initiatives as a member of the senior management team, integrating protection mechanisms into regional mine action frameworks[cite: 1].</li>
+                    <li>Directed the recruitment, onboarding, training and daily performance metrics for a regional community liaison team[cite: 1].</li>
+                    <li>Advised executive leadership on operational best practices and managed data workflows to support evidence-based field interventions[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="job-title">Employment and Integration Advisor</span>
+                    <span class="company-date">Breaking Barriers | Manchester, UK (Sep 2023 – Mar 2024)[cite: 1]</span>
+                </div>
+                <ul>
+                    <li>Managed a caseload of over 30 refugee clients, helping them access professional employment, training opportunities and higher education[cite: 1].</li>
+                    <li>Conducted virtual and face-to-face field assessments, translating client progress into clear progress updates and reports for key funding stakeholders[cite: 1].</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="languages">
+            <h2>Languages</h2>
+            <span class="lang-badge">English (Professional Proficiency)[cite: 1]</span>
+            <span class="lang-badge">Kurdish (Native)[cite: 1]</span>
+            <span class="lang-badge">Arabic (Native)[cite: 1]</span>
+        </section>
+
+        <section id="contact" style="text-align: center;">
+            <h2>Let's Work Together</h2>
+            <p>Available for international deployments, remote project evaluations, and specialised organisational consulting[cite: 1].</p>
+            <div class="contact-buttons">
+                <a href="mailto:sizar.dusky33@gmail.com" class="contact-btn">Email Me</a>
+                <a href="tel:07950705252" class="contact-btn secondary">Call 07950 705252</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Seezar Yaseen. All Rights Reserved. References available upon request[cite: 1].</p>
+    </footer>
+
+</body>
+</html>            letter-spacing: 1px;
             margin-bottom: 0.5rem;
         }
 
